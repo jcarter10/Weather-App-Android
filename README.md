@@ -7,7 +7,7 @@ To my knowledge the only way to run this project currently is through Android St
 
 
 # Main Pipeline
-![Home Page](/images/logo.png)
+![Home Page](/screenshots/Screenshot_1627761685.png)
 Format: ![Alt Text](url)
 
 
