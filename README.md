@@ -18,9 +18,9 @@ I have different backgrounds for each weather type, for most background images I
 
 
 ## 2. Result Page
-<img src="screenshots/Screenshot_1627766481.png" width=300>
-<img src="screenshots/Screenshot_1627766553.png" width=300>
-<img src="screenshots/Screenshot_1627766732.png" width=300>
+<img src="screenshots/Screenshot_1627766481.png" width=300 align=left>
+<img src="screenshots/Screenshot_1627766553.png" width=300 align=center>
+<img src="screenshots/Screenshot_1627766732.png" width=300 align=right>
 
 this jkhjkh .java will handlke all of the fetcfhinbg and data maniplulation required to display the correct format or metric unit ont
 
