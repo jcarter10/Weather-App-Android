@@ -145,8 +145,7 @@ public class WeatherActivity extends AppCompatActivity {
 
     }
 
-    //function to grab the info from the "openweathermap" api for the given input.
-
+    //function to grab the info from the "openweathermap" api for the given input
     public void getWeatherInfo() {
         //creating a link to access the weather at the ID.
         String myAPIKey = "1e847aceca810720c7b857299939f9f0";
@@ -155,9 +154,12 @@ public class WeatherActivity extends AppCompatActivity {
 
         //fetching the data.
         try {
-
             StringBuilder result = new StringBuilder();
+
+            // url object for API
             URL url = new URL(urlString);
+
+            // open url connection to api for reading
             URLConnection conn = url.openConnection();
             BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String line;
@@ -167,8 +169,10 @@ public class WeatherActivity extends AppCompatActivity {
                 result.append(line);
             }
             br.close();
+
             //this prints the entire xml string.
             //System.out.println(result);
+
             //converting the StringBuilder to a string.
             xmlString = result.toString();
 
@@ -199,6 +203,7 @@ public class WeatherActivity extends AppCompatActivity {
             url = new URL("http://openweathermap.org/img/wn/" + w.weatherIcon + "@4x.png");
             Bitmap bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
 
+            // finding view and setting it to weather icon from API
             ImageView im = (ImageView)findViewById(R.id.weatherIcon);
             im.setImageBitmap(bmp);
 
