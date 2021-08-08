@@ -5,10 +5,10 @@ The entire project was built using Android Studio. For the frontend it was built
 
 To my knowledge the only way to run this project currently is through Android Studio due to their built in android emulator support, I assume this can be replicated in other softwares such as IntelliJ IDEA, Visual Studio, Eclipse, etc. It was tested on multiple android emulators but the main one used during development and testing was the Pixel 3a API28 as well as other Pixel variations.
 
-Most of the files at the root were automatically generated / android studio files, the main files worked on were in "app/src/main", more specifically "app/src/main/java" for the JAVA and "app/src/main/res/layout" for the XML.
+The project structure is a little confusing due to most of the files at the root being automatically generated / android studio files. The main files worked on were in "app/src/main", more specifically "app/src/main/java" for the JAVA and "app/src/main/res/layout" for the XML, if interested all of the assets used besides the ones grabbed from the API is in "app/src/main/res/drawable".
 
 
-# Summary: Main Pipeline
+# Summary of Pipeline
 ## 1. Home Page
 <img src="screenshots/Screenshot_1627761685.png" width=250 float="center">
 
