@@ -12,9 +12,7 @@ Most of the files at the root were automatically generated / android studio file
 ## 1. Home Page
 <img src="screenshots/Screenshot_1627761685.png" width=250 float="center">
 
-Users are greeted with the home page (activity_main.xml) in the following figure, and are expected to enter an input in the correct format shown at the top of the screen. This is due to how the JSON in the API is set up, so entries must be "City, Country" where the country is a 2-letter abbreviation. All the countries are pre-defined in a JSON list given to us by the weather API, so when the user enters an input we perform validation checks on it to make sure it's in the list before we fetch the data for the entered input from the API. These checks mostly consist of making sure that the string is in the correct format explained above, if good procceed but if it's bad let the user know whats wrong. For correct inputs in the main button click event we can now scan the list to find the location ID for an exact match of the input. If the location id is found we can proceed by rendering the next activity aka the result page.
-
-I have different backgrounds for each weather type, for most background images I kept the author and site in the file name under the drawable folder, if curious.
+Users are greeted with the home page view (activity_main.xml) in the following figure, and are expected to enter an input in the correct format shown at the top of the screen. This is due to how the JSON in the API is set up, so entries must be "City, Country" where the country is a 2-letter abbreviation. All the countries are pre-defined in a JSON list given to us by the weather API, so when the user enters an input we perform validation checks on it to make sure it's in the list before we fetch the data for the entered input from the API. These checks mostly consist of making sure that the string is in the correct format explained above, if good procceed but if it's bad let the user know whats wrong. For correct inputs in the main button click event we can now scan the list to find the location ID for an exact match of the input. If the location id is found we can proceed by rendering the next activity aka the result page. All of these functions are handled by the 'MainActivity.java' file.
 
 
 ## 2. Result Page
@@ -24,5 +22,7 @@ I have different backgrounds for each weather type, for most background images I
   <img src="screenshots/Screenshot_1627766732.png" width=250>
 </p>
 
-this jkhjkh .java will handlke all of the fetcfhinbg and data maniplulation required to display the correct format or metric unit ont
+This results page view (activity_weather2.xml) is shown in following figures above. Before the components are rendered the file 'WeatherActivity.java' will handle all of the fetching and some of the data maniplulation required. Depending on the input and weather data it will handle rendering the correct weather assets to the screen (such as the background images, data, time, etc as seen above). 
+
+It starts this proccess by grabbing the information from the API as an XML string and parsing it into relevant components needed. Some reformatting/transforming of the data is required to get the specific units we are looking for, this is handled by calling the functions inside of my 'WeatherInfo.java'. This file will break apart the XML string for the specific function called and will reformat/convert it if needed. For the icons, another fetch call to the API grabs the neccessary weather icon for the locations current weather.
 
